@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Tags on KevinAshen&#39;s Blog</title>
+    <link>https://kevinashen.github.io/tags/</link>
+    <description>Recent content in Tags on KevinAshen&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>kevinashen0528@gmail.com (KevinAshen)</managingEditor>
+    <webMaster>kevinashen0528@gmail.com (KevinAshen)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 22 Dec 2020 21:44:25 +0800</lastBuildDate>
+    
+        <atom:link href="https://kevinashen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>AV Foundation</title>
+        <link>https://kevinashen.github.io/tags/av-foundation/</link>
+        <pubDate>Tue, 22 Dec 2020 21:44:25 +0800</pubDate>
+        <author>kevinashen0528@gmail.com (KevinAshen)</author>
+        
+        <guid>https://kevinashen.github.io/tags/av-foundation/</guid>
+        <description></description>
+        
+        <dc:creator>KevinAshen</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>《AV Foundation开发秘籍》</title>
+        <link>https://kevinashen.github.io/tags/av-foundation%E5%BC%80%E5%8F%91%E7%A7%98%E7%B1%8D/</link>
+        <pubDate>Tue, 22 Dec 2020 21:44:25 +0800</pubDate>
+        <author>kevinashen0528@gmail.com (KevinAshen)</author>
+        
+        <guid>https://kevinashen.github.io/tags/av-foundation%E5%BC%80%E5%8F%91%E7%A7%98%E7%B1%8D/</guid>
+        <description></description>
+        
+        <dc:creator>KevinAshen</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>iterm2</title>
+        <link>https://kevinashen.github.io/tags/iterm2/</link>
+        <pubDate>Tue, 22 Dec 2020 21:41:48 +0800</pubDate>
+        <author>kevinashen0528@gmail.com (KevinAshen)</author>
+        
+        <guid>https://kevinashen.github.io/tags/iterm2/</guid>
+        <description></description>
+        
+        <dc:creator>KevinAshen</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>oh-my-zsh</title>
+        <link>https://kevinashen.github.io/tags/oh-my-zsh/</link>
+        <pubDate>Tue, 22 Dec 2020 21:41:48 +0800</pubDate>
+        <author>kevinashen0528@gmail.com (KevinAshen)</author>
+        
+        <guid>https://kevinashen.github.io/tags/oh-my-zsh/</guid>
+        <description></description>
+        
+        <dc:creator>KevinAshen</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

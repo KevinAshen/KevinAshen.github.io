@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>私人配置 on KevinAshen&#39;s Blog</title>
+    <link>https://kevinashen.github.io/categories/%E7%A7%81%E4%BA%BA%E9%85%8D%E7%BD%AE/</link>
+    <description>Recent content in 私人配置 on KevinAshen&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>kevinashen0528@gmail.com (KevinAshen)</managingEditor>
+    <webMaster>kevinashen0528@gmail.com (KevinAshen)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 22 Dec 2020 21:41:48 +0800</lastBuildDate>
+    
+        <atom:link href="https://kevinashen.github.io/categories/%E7%A7%81%E4%BA%BA%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Mac终端配置方案</title>
+        <link>https://kevinashen.github.io/posts/mac%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/</link>
+        <pubDate>Tue, 22 Dec 2020 21:41:48 +0800</pubDate>
+        <author>kevinashen0528@gmail.com (KevinAshen)</author>
+        <atom:modified>Tue, 22 Dec 2020 21:41:48 +0800</atom:modified>
+        <guid>https://kevinashen.github.io/posts/mac%E7%BB%88%E7%AB%AF%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/</guid>
+        <description>安装 iTerm2：https://www.iterm2.com/ 默认使用zsh终端 1 chsh -s /bin/zsh Oh my zsh 1 2 # curl 安装方式 sh -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&amp;#34; PowerLine 1 2 3 4 5 // 安装</description>
+        
+        <dc:creator>Abaddon</dc:creator>
+        <media:content url="https://kevinashen.github.ioimages/BlogPicture/Mac%e7%bb%88%e7%ab%af%e9%85%8d%e7%bd%ae%e6%96%b9%e6%a1%88%e3%80%8cPreview-Abaddon%e3%80%8d.jpeg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>iterm2</category>
+            
+          
+            
+              <category>oh-my-zsh</category>
+            
+          
+        
+        
+          
+            
+              <category>私人配置</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
