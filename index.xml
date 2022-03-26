@@ -14,7 +14,7 @@
     <managingEditor>kevinashen0528@gmail.com (KevinAshen)</managingEditor>
     <webMaster>kevinashen0528@gmail.com (KevinAshen)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 10 Feb 2021 22:50:30 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 Mar 2022 19:15:02 +0800</lastBuildDate>
     
         <atom:link href="https://kevinashen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,44 @@
         
       
 
+      
+      <item>
+        <title>视图旋转后判断触摸点是否在视图内</title>
+        <link>https://kevinashen.github.io/posts/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85/</link>
+        <pubDate>Sat, 26 Mar 2022 19:15:02 +0800</pubDate>
+        <author>kevinashen0528@gmail.com (KevinAshen)</author>
+        <atom:modified>Sat, 26 Mar 2022 19:15:02 +0800</atom:modified>
+        <guid>https://kevinashen.github.io/posts/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85/</guid>
+        <description>判断某个 point 是否在 View 内部是开发中非常常见的场景，比如最典型的 tap 手势判断 touch point 是否在某个 view 范围内： 图 1 - App 常见页面：欢迎弹窗 在实际的开发中，我遇到</description>
+        
+        <dc:creator>Brewmaster</dc:creator>
+        <media:content url="https://kevinashen.github.ioimages/BlogPicture/%e8%a7%86%e5%9b%be%e6%97%8b%e8%bd%ac%e5%90%8e%e5%88%a4%e6%96%ad%e8%a7%a6%e6%91%b8%e7%82%b9%e6%98%af%e5%90%a6%e5%9c%a8%e8%a7%86%e5%9b%be%e5%86%85%e3%80%8cPreview-Brewmaster%e3%80%8d.jpeg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>旋转</category>
+            
+          
+            
+              <category>开发场景</category>
+            
+          
+            
+              <category>技术</category>
+            
+          
+        
+        
+          
+            
+              <category>iOS</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>「我」的2020年年终总结</title>

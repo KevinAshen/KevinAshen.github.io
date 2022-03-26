@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>「我」的2020年年终总结 – KevinAshen&#39;s Blog</title>
+    <title>视图旋转后判断触摸点是否在视图内 – KevinAshen&#39;s Blog</title>
     
 
 
@@ -653,7 +653,7 @@
     
     var baseurl = JSON.parse("\"https://kevinashen.github.io\"");
     
-    var permalink = JSON.parse("\"https://kevinashen.github.io/posts/%E6%88%91%E7%9A%842020%E5%B9%B4%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/\"");
+    var permalink = JSON.parse("\"https://kevinashen.github.io/posts/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1323,32 +1323,32 @@
 
 
     
-<meta name="description" content="2020年年终总结" />
+<meta name="description" content="多种情况下视图旋转后判断触摸点" />
 
 
-<meta name="keywords" content="非技术">
+<meta name="keywords" content="旋转,开发场景,技术">
 
-<meta name="created" content="2021-02-10T22:50:30&#43;0800">
-<meta name="modified" content="2021-02-10T22:50:30&#43;0800">
-<meta property="article:published_time" content="2021-02-10T22:50:30&#43;0800">
+<meta name="created" content="2022-03-26T19:15:02&#43;0800">
+<meta name="modified" content="2022-03-26T19:15:02&#43;0800">
+<meta property="article:published_time" content="2022-03-26T19:15:02&#43;0800">
 
-<meta name="author" content="Beastmaster">
-<meta property="article:author" content="https://kevinashen.github.io/posts/%E6%88%91%E7%9A%842020%E5%B9%B4%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/@Beastmaster">
+<meta name="author" content="Brewmaster">
+<meta property="article:author" content="https://kevinashen.github.io/posts/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85/@Brewmaster">
 
 
 <meta property="og:site_name" content="KevinAshen&#39;s Blog">
-<meta property="og:title" content="「我」的2020年年终总结">
-<meta property="og:url" content="https://kevinashen.github.io/posts/%E6%88%91%E7%9A%842020%E5%B9%B4%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">
+<meta property="og:title" content="视图旋转后判断触摸点是否在视图内">
+<meta property="og:url" content="https://kevinashen.github.io/posts/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="2020年年终总结">
+<meta property="og:description" content="多种情况下视图旋转后判断触摸点">
 
   
-    <meta property="og:image" content="https://kevinashen.github.io/images/BlogPicture/%E3%80%8C%E6%88%91%E3%80%8D%E7%9A%842020%E5%B9%B4%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E3%80%8CPreview-Beastmaster%E3%80%8D.png">
-    <meta property="og:image:url" content="https://kevinashen.github.io/images/BlogPicture/%E3%80%8C%E6%88%91%E3%80%8D%E7%9A%842020%E5%B9%B4%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E3%80%8CPreview-Beastmaster%E3%80%8D.png">
+    <meta property="og:image" content="https://kevinashen.github.io/images/BlogPicture/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85%E3%80%8CPreview-Brewmaster%E3%80%8D.jpeg">
+    <meta property="og:image:url" content="https://kevinashen.github.io/images/BlogPicture/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85%E3%80%8CPreview-Brewmaster%E3%80%8D.jpeg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="KevinAshen&#39;s Blog">
-    <meta property="twitter:title" content="「我」的2020年年终总结">
-    <meta property="twitter:description" content="2020年年终总结">
+    <meta property="twitter:title" content="视图旋转后判断触摸点是否在视图内">
+    <meta property="twitter:description" content="多种情况下视图旋转后判断触摸点">
   
 
 <meta name="generator" content="Hugo 0.78.1" />
@@ -1360,7 +1360,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://kevinashen.github.io/posts/%E6%88%91%E7%9A%842020%E5%B9%B4%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">
+<link rel="canonical" href="https://kevinashen.github.io/posts/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1386,16 +1386,16 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "「我」的2020年年终总结",
-    "datePublished": "2021-02-10T22:50:30+08:00",
-    "dateModified": "2021-02-10T22:50:30+08:00",
-    "url" : "https://kevinashen.github.io/posts/%E6%88%91%E7%9A%842020%E5%B9%B4%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/",
-    "description": "2020年年终总结",
-    "keywords": ["非技术"],
-    "image" : "https://kevinashen.github.io/images/BlogPicture/%E3%80%8C%E6%88%91%E3%80%8D%E7%9A%842020%E5%B9%B4%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E3%80%8CPreview-Beastmaster%E3%80%8D.png",
+    "headline": "视图旋转后判断触摸点是否在视图内",
+    "datePublished": "2022-03-26T19:15:02+08:00",
+    "dateModified": "2022-03-26T19:15:02+08:00",
+    "url" : "https://kevinashen.github.io/posts/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85/",
+    "description": "多种情况下视图旋转后判断触摸点",
+    "keywords": ["旋转","开发场景","技术"],
+    "image" : "https://kevinashen.github.io/images/BlogPicture/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85%E3%80%8CPreview-Brewmaster%E3%80%8D.jpeg",
     "author": {
       "@type": "Person",
-      "name": "Beastmaster"
+      "name": "Brewmaster"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1688,7 +1688,7 @@
   
   <li  class="is-active" >
     
-      <span>「我」的2020年年终总结</span>
+      <span>视图旋转后判断触摸点是否在视图内</span>
     
   </li>
   
@@ -1700,16 +1700,16 @@
   <div class="single ">
     <div class="single__nojs">Please enable Javascript to view the contents</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">「我」的2020年年终总结</h2>
+    <h2 class="single__title" data-ani="true">视图旋转后判断触摸点是否在视图内</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年02月10日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2022年03月26日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;9&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="作者">🐗&nbsp;Beastmaster</span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="作者">🍶&nbsp;Brewmaster</span>
   
   <span class="single__info">
      &middot; 👀<span id="busuanzi_value_page_pv">...</span> 阅读
@@ -1722,7 +1722,11 @@
   🏷️
   
 
-  <li><a href="https://kevinashen.github.io/tags/%E9%9D%9E%E6%8A%80%E6%9C%AF/" class="single__tag" title="非技术">#非技术</a></li>
+  <li><a href="https://kevinashen.github.io/tags/%E6%97%8B%E8%BD%AC/" class="single__tag" title="旋转">#旋转</a></li>
+
+  <li><a href="https://kevinashen.github.io/tags/%E5%BC%80%E5%8F%91%E5%9C%BA%E6%99%AF/" class="single__tag" title="开发场景">#开发场景</a></li>
+
+  <li><a href="https://kevinashen.github.io/tags/%E6%8A%80%E6%9C%AF/" class="single__tag" title="技术">#技术</a></li>
 
 </ul>
 
@@ -1739,83 +1743,202 @@
   <div class="expand__content expand__content--toc">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#实习">实习</a></li>
-    <li><a href="#秋招">秋招</a></li>
-    <li><a href="#自我充实">自我充实</a></li>
-    <li><a href="#展望2021">展望2021</a></li>
+    <li><a href="#view-未发生旋转">View 未发生旋转</a></li>
+    <li><a href="#view-发生旋转">View 发生旋转</a>
+      <ul>
+        <li><a href="#frame-与-bounds">Frame 与 Bounds</a></li>
+        <li><a href="#convertpointtoview">convertPoint:toView:</a></li>
+      </ul>
+    </li>
+    <li><a href="#view-发生旋转--frame-only">View 发生旋转 &amp;&amp; frame only</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
   </div>
 </div>
 
-      <blockquote>
-<p>艰难方显勇毅，磨砺始得玉成</p>
-</blockquote>
-<p>无疑，2020年是不平凡的一年，新冠疫情席卷世界，中国度过了艰难的一年</p>
-<p>从我个人出发，2020年实现了从学生到打工人的身份转换，转眼间大学毕业似乎就在眼前，更多的挑战，更多的思考都在等待着我</p>
-<h2 id="实习">实习</h2>
-<p>实习生活从20年伊始一直到八月份。期间在技术，为人处事，解决问题的能力上都有不错的提升。首次接触了Swift开发，了解到了RxSwift这样的响应式编程框架，结合使用，对于MVVM也有了更深的理解而不再停留在纸面上</p>
-<p>参与了数个需求的开发，感受到了客户端开发的流程，以及公司一个完整需求的开发过程。这里面我觉得最重要的首先还是对项目的熟悉，对于这次需求会改动到的点，以及是否存在可复用的组件要心中有数方可下手；其次，一个完整，详细的估时可以节约很多时间，提前暴露开发过程中潜在的问题，估计时间应该被直接乘于π，可以参考这张表格<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<p><img src="https://tva1.sinaimg.cn/large/0081Kckwgy1gm9freidc4j30js0jxqka.jpg" alt="程序员估时表" /></p>
-<p>在组内工作，了解到需求会有产品需求和技术需求两类，iOS开发或者说客户端开发并不只是简单的堆叠功能，会有对于安装包体积，启动速度，内存消耗等等一系列相关指标需要进行优化，日常工作也还有抓崩溃堆栈，代码重构等</p>
-<p>很大的感触也在于学校里的知识没有白学，尤其是软件工程课，画UML图，软件设计的一些原则和概念都是有实际意义的</p>
-<h2 id="秋招">秋招</h2>
-<p>很遗憾没有通过转正，走上秋招之路</p>
-<p>从8月25号开始，和两个同学一起租了民宿，租到学校开学，进行复习。这期间一直在刷《剑指offer》，一天六道的量（排了挺多学习计划的，但基本都没做，就刷题坚持下来了，因为那时候也没有估计到转正失败，心态非常的放松😂）</p>
-<p>一直到开学了一两周后，得知了转正结果，万念俱灰下，也发现自己看似稳坐高楼，其实已经身处悬崖边，面临的不是选择去哪座大厂，而是毕业后会不会直接失业</p>
-<p>清点了下此时的状态，计算机网络，操作系统基本没复习，大量面试考察点都没有背过；iOS相关知识从实习面试通过后就基本没动过；算法刷题局限于《剑指offer》，常规的二叉树，排序算法都还没复习；可能唯一比较有优势的是刚进行完转正答辩，对于实习期间的工作比较熟悉</p>
-<p>而最最致命的问题在于，2020年秋招时间提前，秋招不再是往年的“金九银十”，而是“金八银九”。在我决心认真投入秋招的时候，所有公司的提前批都已经结束，部分公司的正式批都已接近尾声（e.g. 投简历错过了虾皮的截止日期，后面证明，这绝对不是一个正确的选择）。因此，我没有办法给自己留出时间先复习再投递，只能边面试边复习，摸着石头过河，能走一步是一步</p>
-<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmt2tvg8duj31aj0u0e81.jpg" alt="当时整理的秋招时间表" /></p>
-<p>第一场面试来的猝不及防，面试前一个晚上我一个人背计算机网络，操作系统的知识点一直背到了凌晨四点，甚至都不是为了通过面试，而是不想连最基本的计算机基础都答不上来，浪费面试官的时间。但事实证明临时抱佛脚没有半点用处，第二天的面试完全是灾难级别的表现，百分之八十的问题我都只能尴尬的支支吾吾</p>
-<p>面完了也没时间惆怅，只能再翻出之前找实习时总结的iOS复习资料继续复习，和同批秋招的同学交流学习计算机基础方面的知识点，总结出自己的复习资料，每一天都在不间断的复习，刷题，面试，背书中度过</p>
-<p>秋招投递的简历使用的是我实习简历+实习内容组合成的简历，在一次次面试中，我发现了有几个点几乎每一个面试官都会问到，特别典型的比如我第二个项目写的是H5与Native交互框架，其中H5的部分用到了WKWebView以及JSBridge技术，我在简历上提到了这两个点。万万没想到，这么一句话成为了后面每个面试官的兴趣所在，每个人都对这两个部分产生了极大的兴趣。可我这个项目是差不多一年以前写的，当时也实现的很简单，对于JSBridge只是简单的实现，没有看过底层实现原理。WKWebView更是只是<code>init</code>了下，没有深层次运用。没有办法，还是只能网上搜索了大量相关的资料进行了解与记忆，但毕竟之前没有自己的实践过，在后面被问到的时候只能说一些资料上的说法，保证不会冷场（卑微）</p>
-<p>此外对于实习经历，也会有一些不同面试官都会问到的点，虽然是我自己的实际经历的实习，但经过与各位面试官的交流后，注意一些面试官会特别关心的点后，我切实感受到我在实习期间的缺漏，对于接触过的代码，自己的思考还是太少，没有去看项目内用到的一些库。这一点在写简历的时候就有些感受，自己写的实习需求，都是功能性需求，里面涉及到的技术性不高，自己也没注意挖掘背后的技术点，确实是实习时自己没做好的地方</p>
-<p>度过了艰难的两周之后，我的秋招终于缓过来了一些，常见的面试点都已经熟悉，自己简历上的坑点，面试官特别感兴趣的点我做到心中有数，人的自信也有所回升，对于面试没有那么发怵，不会再遇到被问得哑口无言的情况，哪怕是遇到自己完全没有了解的知识点，我也可以很自然的回答“这个知识点我还没有了解过，但我知道与它类似（接近，相关）的XXXX，我可以讲下这个XXXX”，然后再慢慢回到我舒服的节奏里</p>
-<p>回望整个秋招过程，我经历了开局的炸裂，中期发育打钱的艰难，后期装备成型一波翻盘的爽快。这其中，要感谢和我一起同甘共苦的秋招伙伴，感谢跟我提供各种帮助的学长学姐，感谢实习期间共事的同事导师，感谢每一个给我机会，教我东西的面试官。除此之外，我也好想感谢下自己，感谢那个在大二暑假早八晚十，一杯茶，一行代码看一天的自己，感谢那个差不多把《iOS高级编程》翻烂的自己；感谢在19年十月份准备找实习的时候，把iOS知识点全部整理到幕布，画成思维导图的自己，让我秋招的时候可以直接翻出来复习；再往前，感谢进入大学开始，就养成学习必写博客总结习惯的自己。感谢自己过去流过的一滴滴汗，喝过的一杯杯咖啡，是过去的种种，成就了今天的翻盘</p>
-<p><img src="https://pic3.zhimg.com/80/v2-9eb68c0eceb298a52ef9e1549526ae2e_1440w.jpg" alt="存在就已经很伟大了" /></p>
-<h2 id="自我充实">自我充实</h2>
-<p>秋招尘埃落定后，我第一件想做的事情就是读书，读书是从实习到一半的时候产生的念头，在与许多优秀的同事共事后，在体验开发工程师的工作后，我真正感受到了自己在计算机方面的浅薄。浅薄是全方面的，大学期间，太多时间花在iOS的UI编写，在入门iOS开发之后，没有注意给自己进行充电补充，也没有制定过科学的学习计划，这一部分的缺失，导致我在iOS方面，听起来好像接触过快三年了，但其实没有什么特别深入的理解，自己的知识武装库同样不足。此外，在大学期间，对于计算机基础课程太不重视了，计算机基础方面的知识我其实很匮乏，逃了太多基础课用于写一些重复的代码了。这一点我最近看了刘谦在b站发布的两个视频，讲述自己怎么在三周之内从钢琴白痴到能弹奏《致爱丽丝》<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>。这里面涉及到两个关于学习的观点：</p>
-<ol>
-<li>无意义的重复没有办法有进步，在练习时必须有意识地思考自己的薄弱之处</li>
-<li>进入一个崭新领域，应该先学习一些可以快速看到成就的内容，先满足对该领域的兴趣之后再进行系统深入的学习</li>
-</ol>
-<p>这里的第二个观点，我觉得是一个很重要的认识，以计算机举例，上来就学《计算机导论》《操作系统》《计算机网络》，估计只会把人劝退，合适有效的入门还是应该学习语言，做自己感兴趣的小程序，甚至是制作steam的一些mod，都是能让人产生满足与兴趣的。而在入门之后，出于对于自己情况的了解，以及推开计算机大门之后看到的内里的种种风景，能意识到自己的不足，回头去补足基础是合理而又自然的</p>
-<p>这其中最关键的一环就是读书，真正的经典，不会过时的知识都在书上，依然以计算机举例，操作系统，计算机网络这些是计算机的基础，不会有很大的变化，不去系统地读书了解，无法真正理解。而一些像时新的三方库，某些语言的特性，这些都是不断在推陈出新的，反而是应该去读行业最前线的博客避免学到过时的内容，这是我目前对于学习的一些观点与看法</p>
-<p>基于实习以来的这些思考，我在秋招结束以后，一面准备考六级，刷卷子，一面就是在读书，充电。先是慢慢看完了秋招中就开始看的《计算机科学速成课》，这一系列节目涉及到了计算机的方方面面，看完之后觉得挺可惜，加入我是在大一就看到这个，我可能会提前对计算机基础的重要性有理解。总之，这个系列讲得很有趣，是个很好的入门视频，个人觉得最适合大一学生，假如是对计算机零了解的人可以挑自己感兴趣的看，里面没有一行代码</p>
-<p>之后开始看书，在实习期间，我就慢慢记录了一个读书清单，列举了想读的书。在之前，我有在知乎上看过讨论，计算机书籍需不需要看英文原版，提到的看英文原版的好处大概有这几个：</p>
-<ol>
-<li>避免翻译错误（这一条是提到的是最多的）</li>
-<li>提升英语水平，学以致用是最好的学习手段</li>
-<li>学计算机没有办法避免的会和英语打交道</li>
-</ol>
-<p>因此我就看起了《Computer Systems: A Programmer&rsquo;s Perspective 深入理解计算机系统》，或者说啃起了《CS:APP》，看英文原著的要比我想象的还要困难。说困难可能不恰当，反正也是开着翻译软件搜着看，但是阅读的效率实在不敢恭维，啃了两个小时发现才看了十页的感觉简直窒息</p>
-<h2 id="展望2021">展望2021</h2>
-<p>2021年上半年我会迎来最后的在校时光，需要写好毕设，论文，做好入职前的准备，下半年会正式开始上班</p>
-<p>这样新的一年对自己的期待也就是希望可以看完两本英文专著，坚持每个月写一两篇博客，吸取实习的教训，上班时保持积极进取的学习</p>
-<p>个人角度希望坚持锻炼，坚持读书，培养下其他爱好，另外就是麻烦甜甜的爱情赶紧找上我，很急很关键</p>
-<p>当然期待很多，也不确定能实现多少，尤其读两本英文专著，实在不知道我这蜗牛速度能不能读完，反正在校期间多读书吧，上班了就不知道还会不会有时间了</p>
-<p>不行，这么写太潦草了，一点不像新年计划，我要写严肃一点</p>
-<ul>
-<li><input disabled="" type="checkbox" /> 看完《Computer Systems: A Programmer&rsquo;s Perspective 深入理解计算机系统》</li>
-<li><input disabled="" type="checkbox" /> 看完《计算机程序的构造和解释》（Structure and Interpertation of Computer Programming，SICP）</li>
-<li><input disabled="" type="checkbox" /> 看完《AVFoundation秘籍》（上半年）</li>
-<li><input disabled="" type="checkbox" /> 写12到24篇技术博客</li>
-<li><input disabled="" type="checkbox" /> 阅读一到两个开源库代码</li>
-</ul>
-<p>粗粗列了五条，我也是第一次做一整年的规划，也是做一次实验吧，看看自己能不能做到，不行就在调整吧（和自己和解）</p>
-<p>之后就是祝愿了，希望我爱的，爱我的人都身体健康，顺顺利利，希望新的一年少出乱子，希望新的一年自己行动力拉满</p>
-<p>这篇文章时一月二号动的笔，拖到了二月十号写完，总感觉并不是一个好兆头😨</p>
-<div class="footnotes" role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p>The above quote is excerpted from Rob Pike&rsquo;s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
-<p><a href="https://www.bilibili.com/video/BV12X4y1u7V2">【技能速成】只需3周！最短时间新技能GET！</a>与<a href="https://www.bilibili.com/video/BV1Wt4y1r7km">【成果展示】3周挑战贝多芬，学习钢琴成果首次公开！</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
+      <p>判断某个 point 是否在 View 内部是开发中非常常见的场景，比如最典型的 tap 手势判断 touch point 是否在某个 view 范围内：</p>
+<p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h0nefjfy1kj20u00vqgmk.jpg" alt="图 1 - App 常见页面：欢迎弹窗" /></p>
+<p><strong>图 1 - App 常见页面：欢迎弹窗</strong></p>
+<p>在实际的开发中，我遇到了 view 旋转后需要判断点是否在范围内的问题。在这篇文章中我会从简单情况到我真实遇到的问题一步步推导，阐明我是如何解决该问题的</p>
+<h2 id="view-未发生旋转">View 未发生旋转</h2>
+<p>假设 View 没有发生旋转，我们仅需要使用 CGRect 提供的 CGRectContainsPoint 函数就可以进行判断。例如前言中提及的这个欢迎弹窗的 tap 手势判断：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-objective-c" data-lang="objective-c"><span class="p">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">shouldHandleTap:</span><span class="p">(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">touchPoint</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">CGRectContainsPoint</span><span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="n">contentView</span><span class="p">.</span><span class="n">frame</span><span class="p">,</span> <span class="n">touchPoint</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
 </div>
+</div><h2 id="view-发生旋转">View 发生旋转</h2>
+<p>当视图进行了旋转后，出现的一个问题就是 view.frame 不再能准确描述 view 的范围。我们查看 CGRect 的定义：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-objective-c" data-lang="objective-c"><span class="k">struct</span> <span class="n">CGRect</span> <span class="p">{</span>
+  <span class="n">CGPoint</span> <span class="n">origin</span><span class="p">;</span>
+  <span class="n">CGSize</span> <span class="n">size</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>CGRect 是一个仅由矩形原点以及矩形长宽组成的结构体，这样子的描述方式是无法描述一个旋转过后的矩形的。事实上，旋转后再打印 view.frame 会得到一个面积更大的矩形（前提是旋转角度不是 90 的倍数）。因此不能再使用 self.contentView.frame 进行判断</p>
+<p>使用 CGRectApplyAffineTransform 函数可以将参数中的 CGRect 进行变换，返回新的 CGRect，查阅函数的注释：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-objective-c" data-lang="objective-c"><span class="cm">/* Transform `rect&#39; by `t&#39; and return the result. Since affine transforms do
+</span><span class="cm">   not preserve rectangles in general, this function returns the smallest
+</span><span class="cm">   rectangle which contains the transformed corner points of `rect&#39;. If `t&#39;
+</span><span class="cm">   consists solely of scales, flips and translations, then the returned
+</span><span class="cm">   rectangle coincides with the rectangle constructed from the four
+</span><span class="cm">   transformed corners. */</span>
+
+<span class="n">CG_EXTERN</span> <span class="n">CGRect</span> <span class="nf">CGRectApplyAffineTransform</span><span class="p">(</span><span class="n">CGRect</span> <span class="n">rect</span><span class="p">,</span> <span class="n">CGAffineTransform</span> <span class="n">t</span><span class="p">)</span>
+  <span class="n">CG_AVAILABLE_STARTING</span><span class="p">(</span><span class="mf">10.4</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>可知变换后无法保留矩形，实际上是将原矩形的四个角点进行变换，返回能容纳新的四个角点的最小矩形</p>
+<h3 id="frame-与-bounds">Frame 与 Bounds</h3>
+<blockquote>
+<p>Reference: <a href="https://wiki.jikexueyuan.com/project/ios-core-animation/layer-geometry.html">图层几何学</a></p>
+</blockquote>
+<p><img src="https://wiki.jikexueyuan.com/project/ios-core-animation/images/3.1.jpeg" alt="图 2 - 变换前的 frame 与 bounds" /></p>
+<p><strong>图 2 - 变换前的 frame 与 bounds</strong></p>
+<p><img src="https://wiki.jikexueyuan.com/project/ios-core-animation/images/3.2.jpeg" alt="图 3 - 旋转后的 frame 与 bounds" /></p>
+<p><strong>图 3 - 旋转后的 frame 与 bounds</strong></p>
+<p>两张图很好地说明了 frame 与 bounds 的区别：</p>
+<ul>
+<li>frame: 视图的外部坐标（相对坐标），原点与父图层保持一致</li>
+<li>bounds: 视图的内部坐标（绝对坐标），原点位于视图的左上角</li>
+</ul>
+<p>当发生旋转后，frame 相当于调用了 CGRectApplyAffineTransform 函数，转换为能容纳旋转后视图的最小矩形，因此 origin, size 都会发生改变</p>
+<p>而 bounds 由于是绝对坐标，相当于整个坐标系都一起发生了旋转，因此不会有变化：</p>
+<p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h0nh99udc2j20w50u0wfc.jpg" alt="图 4 - bounds 坐标系旋转" /></p>
+<p><strong>图 4 - bounds 坐标系旋转</strong></p>
+<h3 id="convertpointtoview">convertPoint:toView:</h3>
+<p>convertPoint:toView: 方法是一个坐标系转化方法，能够将给定的 CGPoint 转化到目标 View 的坐标系中</p>
+<p>因此我们先将 point 转化到 contentView 中，得到在 contentView.bounds 这个坐标系里点的坐标，再判断转换后的点是否在 contentView.bounds 中，就可以得到正确的结果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-objective-c" data-lang="objective-c"><span class="p">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">shouldHandleTap:</span><span class="p">(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">touchPoint</span> <span class="p">{</span>
+  <span class="n">CGPoint</span> <span class="n">convertPoint</span> <span class="o">=</span> <span class="p">[</span><span class="nb">self</span> <span class="nl">convertPoint</span><span class="p">:</span><span class="n">touchPoint</span> <span class="nl">toView</span><span class="p">:</span><span class="nb">self</span><span class="p">.</span><span class="n">contentView</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">CGRectContainsPoint</span><span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="n">contentView</span><span class="p">.</span><span class="n">bounds</span><span class="p">,</span> <span class="n">convertPoint</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="view-发生旋转--frame-only">View 发生旋转 &amp;&amp; frame only</h2>
+<p>最后一种情况也是开发中我实际遇到的是无法获取对应的 View，仅能获取对应的 frame 以及视图的旋转角度，要判断 touch point 是否在视图范围内</p>
+<p>由于无法获取对应的 view，也就没有办法得到 view.bounds，无法将 touchPoint 进行坐标系转化</p>
+<p>重新分析我们的问题，假设我们的 touchPoint 在旋转后的矩形内：</p>
+<p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h0nh953yloj20w50u0my3.jpg" alt="图 5 - touchPoint 位于旋转后的矩形" /></p>
+<p><strong>图 5 - touchPoint 位于旋转后的矩形</strong></p>
+<p>视图发生旋转，本质上是矩形内所有点围绕中心点发生了旋转，因此我们的 touchPoint 如果逆角度进行旋转可以转回原来的矩形（也就是我们的 frame）：</p>
+<p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h0nh8zks6yj20w50u0dgv.jpg" alt="图 6 - touchPoint 转化" /></p>
+<p><strong>图 6 - touchPoint 转化</strong></p>
+<p>我们需要对 touchPoint 进行旋转，将 point 绕矩形的中心点反方向旋转对应的角度，再判断新的 point 是否在 frame 内</p>
+<p>CGPoint 中没有提供绕点旋转的方法，需要我们自己进行计算</p>
+<blockquote>
+<p>Reference: <a href="https://blog.csdn.net/u013445530/article/details/44904017">计算几何之向量旋转</a></p>
+<p>推广结论：对于任意两个不同点A和B，A绕B旋转θ角度后的坐标为：</p>
+<p>(Δx<em>cosθ- Δy * sinθ+ xB,  Δy</em>cosθ + Δx * sinθ+ yB )</p>
+<p>注：xB、yB为B点坐标。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-objective-c" data-lang="objective-c"><span class="c1">/// 返回绕中心点旋转后的点
+</span><span class="c1">/// @param point 旋转前的点
+</span><span class="c1">/// @param anchorPoint 旋转中心点
+</span><span class="c1">/// @param angle 旋转角度
+</span><span class="c1"></span><span class="p">-</span> <span class="p">(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nf">pointRotated:</span><span class="p">(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span>
+            <span class="nf">anchorPoint:</span><span class="p">(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">anchorPoint</span>
+                  <span class="nf">angle:</span><span class="p">(</span><span class="n">CGFloat</span><span class="p">)</span><span class="nv">angle</span> <span class="p">{</span>
+  <span class="n">CGFloat</span> <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">anchorPoint</span><span class="p">.</span><span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">anchorPoint</span><span class="p">.</span><span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">+</span> <span class="n">anchorPoint</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+  <span class="n">CGFloat</span> <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">anchorPoint</span><span class="p">.</span><span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">anchorPoint</span><span class="p">.</span><span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">+</span> <span class="n">anchorPoint</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">CGPointMake</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">shouldHandleTap:</span><span class="p">(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">touchPoint</span>
+                  <span class="nf">frame:</span><span class="p">(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span>
+                  <span class="nf">angle:</span><span class="p">(</span><span class="n">CGFloat</span><span class="p">)</span><span class="nv">angle</span> <span class="p">{</span>
+  <span class="n">CGPoint</span> <span class="n">rotatedPoint</span> <span class="o">=</span> <span class="p">[</span><span class="nb">self</span> <span class="nl">pointRotated</span><span class="p">:</span><span class="n">touchPoint</span>
+                                <span class="nl">anchorPoint</span><span class="p">:</span><span class="n">CGPointMake</span><span class="p">(</span><span class="n">CGRectGetMidX</span><span class="p">(</span><span class="n">frame</span><span class="p">),</span> <span class="n">CGRectGetMidY</span><span class="p">(</span><span class="n">frame</span><span class="p">))</span>
+                                      <span class="nl">angle</span><span class="p">:</span><span class="n">angle</span><span class="p">];</span>
+  <span class="k">return</span> <span class="n">CGRectContainsPoint</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">rotatedPoint</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在使用该方法时会发现旋转 90° 得到的点坐标有很小的误差，是因为我们使用的圆周率并不是真实值，查看 math.h 文件可以看到 M_PI 的定义：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-objective-c" data-lang="objective-c"><span class="cp">#define M_PI        3.14159265358979323846264338327950288   </span><span class="cm">/* pi             */</span><span class="cp">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>但这样的误差实际上非常小，可以忽略不计</p>
+<h2 id="summary">Summary</h2>
+<p>最开始的时候，我考虑的做法是计算旋转过后矩形的四个角的坐标，再计算新的每条边的方程式，用类似高中数学里线性规划的方式去计算 point 是否在范围内：</p>
+<blockquote>
+<p>screenshot: <a href="http://www.360doc.com/content/18/0803/21/34299166_775500892.shtml">线性规划常见题型和解法</a></p>
+</blockquote>
+<p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h0ngrt82sij21080fuq4l.jpg" alt="图 7 - 线性规划例题" /></p>
+<p><strong>图 7 - 线性规划例题</strong></p>
+<p>之后想到矩形旋转比较复杂，可以尝试反过来考虑把点进行旋转。伟大的哲学家拉大缸“先生”教导我们：只有回归，才能揭露秘密</p>
+<blockquote>
+<p>screenshot: <a href="https://www.bilibili.com/video/BV1zu411D7hy/?spm_id_from=333.788.recommend_more_video.0">疾风华莱士</a></p>
+</blockquote>
+<p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h0ndjttoqcj20u00zm0yy.jpg" alt="图 8 - 「只有回归，才能揭露秘密」" /></p>
+<p><strong>图 8 - 「只有回归，才能揭露秘密」</strong></p>
+<p>让我们伸出双手，摆出这个 pose，愉快地结束这篇博客～～</p>
 
     </article>
     
@@ -2082,7 +2205,7 @@
     </div>
     <div class="whoami__title">
       
-        Beastmaster
+        Brewmaster
       
     </div>
     <div class="whoami__desc">
@@ -2186,41 +2309,19 @@
     <section class="related">
     
     
-    <h1 class="related__title">
-      <hr class="hr-dots"/>
-      <div>
-        相关内容
-      </div>
-      <hr class="hr-dots"/>
-    </h1>
-    <ul class="related-ul">
-        
-        <li>
-          <a href="/posts/%E6%9C%9D%E7%A2%A7%E6%B5%B7%E6%9A%AE%E8%8B%8D%E6%A2%A7%E6%AD%A6%E6%B1%89/" class="related__link">朝碧海·暮苍梧「武汉」</a>
-        </li>
-        
-    </ul>
-    
   </section>
     <div class="grow"></div>
 <nav class="pagination-single">
   
     
-      <a href="https://kevinashen.github.io/posts/%E6%9C%9D%E7%A2%A7%E6%B5%B7%E6%9A%AE%E8%8B%8D%E6%A2%A7%E6%AD%A6%E6%B1%89/" class="pagination-single__left">
+      <a href="https://kevinashen.github.io/posts/%E6%88%91%E7%9A%842020%E5%B9%B4%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">朝碧海·暮苍梧「武汉」</div>      
+        <div class="pagination-single__left-title">「我」的2020年年终总结</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://kevinashen.github.io/posts/%E8%A7%86%E5%9B%BE%E6%97%8B%E8%BD%AC%E5%90%8E%E5%88%A4%E6%96%AD%E8%A7%A6%E6%91%B8%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E8%A7%86%E5%9B%BE%E5%86%85/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">视图旋转后判断触摸点是否在视图内</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2231,8 +2332,8 @@
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-02-10 22:50:30 \u002b0800 CST',
-    title: '「我」的2020年年终总结',
+    id: '2022-03-26 19:15:02 \u002b0800 CST',
+    title: '视图旋转后判断触摸点是否在视图内',
     clientID: '9f1e4b9e9422e8054c74',
     clientSecret: 'b6779357e7b9127e844c492dda12586e87920d2a',
     repo: 'gittalk-comment',
@@ -2596,10 +2697,15 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#实习">实习</a></li>
-    <li><a href="#秋招">秋招</a></li>
-    <li><a href="#自我充实">自我充实</a></li>
-    <li><a href="#展望2021">展望2021</a></li>
+    <li><a href="#view-未发生旋转">View 未发生旋转</a></li>
+    <li><a href="#view-发生旋转">View 发生旋转</a>
+      <ul>
+        <li><a href="#frame-与-bounds">Frame 与 Bounds</a></li>
+        <li><a href="#convertpointtoview">convertPoint:toView:</a></li>
+      </ul>
+    </li>
+    <li><a href="#view-发生旋转--frame-only">View 发生旋转 &amp;&amp; frame only</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
   </div>
